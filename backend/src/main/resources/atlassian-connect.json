@@ -1,0 +1,33 @@
+{
+  "key": "${addon.key}",
+  "baseUrl": "${addon.base-url}",
+  "name": "Atlassian Component Example",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["READ"],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "form-page",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Form"
+        },
+        "url": "/example/form"
+      },
+      {
+        "key": "table-page",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Table"
+        },
+        "url": "/example/table"
+      }
+    ]
+  }
+}

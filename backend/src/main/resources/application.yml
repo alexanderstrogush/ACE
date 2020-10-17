@@ -1,0 +1,8 @@
+spring.jpa.hibernate.ddl-auto: none
+spring.datasource.url: jdbc:hsqldb:file:addon-db # Use a file-based backing store for HSQL
+
+addon:
+  key: atlassian-component-example
+  base-url: https://2fa6b4021165.eu.ngrok.io
+
+logging.level.com.atlassian.connect.spring: DEBUG
